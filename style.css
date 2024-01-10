@@ -1,0 +1,172 @@
+/*Emwika Nanong*/
+body, header, nav, main, footer, h1, div, img { /*css reset*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+} 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #EBF7E3;
+}
+
+body h3 {
+ font-family: 'Ubuntu', sans-serif;
+}
+
+body h1 {
+  font-family: 'Pacifico', cursive;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3em;
+  padding: 2%;
+  margin-bottom: 2%;
+  background-color: #EBF7E3;
+  text-align: center;
+  width: 100%;
+}
+
+.container-fluid {
+  text-align: center; /* Optional: Center the buttons */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(11.25em, 100%), 1fr));
+}
+.container-fluid a button { /*delete underline from buttons*/
+  text-decoration: none;
+  color: #EBF7E3;
+}
+
+.container-fluid button {
+  display: inline-block;
+  margin-right: 10px; /* Optional: Add some space between buttons */
+  border-radius: 12px;
+  background-color: #66B032;
+}
+
+.caption { /* hide Caption */
+  display: none;
+}
+
+.carousel-caption:hover + .caption { /*caption only show when mouth over chapter name*/
+  display: block;
+  color: #EBF7E3;
+}
+
+.carousel-caption a button {
+  text-decoration: none;
+  color: #EBF7E3;
+  background-color: #375F1B;
+  border-radius: 13px;
+}
+
+.carousel-inner {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #375F1B; 
+  border-radius: 1px; /* Added border-radius for styling */
+  padding: 20px; /* Added padding for spacing */
+}
+
+.carousel-indicators {
+  border-radius: 1px; /* Added border-radius for styling */
+  background-color: #375F1B; /* Added background color */
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+h3 {
+  margin-top: 2%;
+}
+
+footer {
+    background-color: #1B3409;
+    text-align: center;
+    width: 100%;
+    font-size: 12px;
+  margin-top: 150px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #1B3409;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+.container-fluid {
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+}
+
+.carousel-caption {
+  text-align: center;
+}
+
+.caption p {
+  text-align: center;
+}
+
+.carousel-indicators {
+  text-align: center;
+}
+
+footer {
+  background-color: #1B3409;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 1em;
+  }
+
+  .caption p {
+    font-size: 1em;
+  }
+}
+
+/* Styles for desktops */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1.8em;
+  }
+
+  button {
+    font-size: 1.2em;
+  }
+
+  .caption p {
+    font-size: 1.2em;
+  }
+}
